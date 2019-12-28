@@ -196,7 +196,7 @@
 
 	}
 
-	this.resizeOverlay = this.CreateOverlay ( {
+	this.resizeOverlay = this.CreateOverlay ({
 		id : 'resizeOverlay', 
 		target : document.body, 
 		className : 'resizeOverlay', 
@@ -212,7 +212,7 @@
 			zIndex : 1000, 
 			visible : true, 
 		}, 
-	}, 1 );
+	});
 
 	console.error ( this.resizeOverlay );
 
