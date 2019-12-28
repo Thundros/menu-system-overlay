@@ -175,7 +175,6 @@
 			console.error ( 'right : ' + this.overlay.style.right );
 
 			this.AppendOverlay ( {
-				masterKey : this.masterKey, 
 				overlay : this.overlay, 
 				overlayName : this.overlay.id, 
 				overlayTarget : this.overlay.target, 
