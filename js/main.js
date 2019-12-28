@@ -6,8 +6,8 @@
 	  * @returns {Boolean}
 	  */
 
-	WINDOW_INNERWIDTH = ( window.innerWidth );
-	WINDOW_INNERHEIGHT = ( window.innerHeight );
+	var WINDOW_INNERWIDTH = ( window.innerWidth );
+	var WINDOW_INNERHEIGHT = ( window.innerHeight );
 
 	this.inStr = function ( string, subString ) {
 
