@@ -27,12 +27,10 @@
 	this.isElement = function ( obj ) {
 
 		if ( typeof obj !== 'object' ) {
-
 			return false
-
 		}
 
-			let prototypeStr, prototype;
+		let prototypeStr, prototype;
 
 		do {
 
