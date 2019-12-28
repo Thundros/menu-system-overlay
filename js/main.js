@@ -208,7 +208,7 @@
 			position : 'absolute', 
 			top : '500px', 
 			left : '0px', 
-			bottom : '0px', 
+			bottom : '500px', 
 			right : '0px', 
 			zIndex : 1000, 
 			visible : true, 
