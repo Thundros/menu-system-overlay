@@ -14,7 +14,7 @@
 		this.string = string;
 		this.subString = subString;
 
-		return ( this.string.indexOf ( this.subString ) !== -1 );
+		return ( this.subString.indexOf ( this.string ) !== -1 );
 
 	}
 
