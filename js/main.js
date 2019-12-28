@@ -6,6 +6,9 @@
 	  * @returns {Boolean}
 	  */
 
+	WINDOW_INNERWIDTH = ( window.innerWidth );
+	WINDOW_INNERHEIGHT = ( window.innerHeight );
+
 	this.inStr = function ( string, subString ) {
 
 		this.string = string;
