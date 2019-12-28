@@ -213,7 +213,6 @@
 			visible : true, 
 		}, 
 	});
-
 	console.error ( this.resizeOverlay );
 
 
