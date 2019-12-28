@@ -18,6 +18,113 @@
 
 	}
 
+	/**
+	  * @description detect if obj is an element
+	  * @param {*} obj
+	  * @returns {Boolean}
+	  */
+
+	this.isElement = function ( obj ) {
+
+		if ( typeof obj !== 'object' ) {
+
+			return false
+
+		}
+
+			let prototypeStr, prototype;
+
+		do {
+
+			prototype = Object.getPrototypeOf ( obj );
+
+				// to work in iframe
+
+					prototypeStr = Object.prototype.toString.call ( prototype );
+
+				// '[object Document]' is used to detect document
+
+			if
+
+			(
+
+				prototypeStr === '[object Element]'
+
+					|| 
+
+				prototypeStr === '[object Document]'
+
+			)
+
+			{
+
+				return true;
+
+			}
+
+			obj = prototype;
+
+			// null is the terminal of object
+
+		}
+
+		while ( prototype !== null ) {
+
+			return false;
+
+		}
+
+	}
+
+	this.AppendOverlay = function ( objData )
+
+	{
+
+		this.objData = objData;
+
+		this.overlay = this.objData.overlay;
+		this.overlayName = this.objData.overlayName;
+		this.overlayTarget = this.objData.overlayTarget;
+
+		if ( typeof ( this.overlay ) !== 'object' ) { return console.error ( 'ERROR :: { Please ensure you are using an `element` for `overlay` & try again } !' ); }
+		if ( typeof ( this.overlayName ) !== 'string' ) { return console.error ( 'ERROR :: { Please ensure you are using a `string` for `overlayName` & try again } !' ); }
+		if ( typeof ( this.overlayTarget ) !== 'object' ) { return console.error ( 'ERROR :: { Please ensure you are using an `element` for the `overlay\'s` target & try again } !' ); }
+
+		if ( typeof ( this.overlay ) !== 'null' && this.overlay !== 'null' ) {
+
+			if ( this.isElement ( this.overlayTarget ) ) {
+
+				this.overlayTarget.appendChild ( this.overlay );
+
+			}
+
+			else {
+
+				return console.error (
+
+					'The `overlayTarget`, \'' + this.overlayName + '\' is NOT a `DOM element`!'
+
+				);
+
+			}
+
+		}
+
+		else {
+
+			return console.error (
+
+				'The `DOM element` \'' + this.overlayName + '\' does not exist!'
+
+			);
+
+		}
+
+		return this.overlay;
+
+	}
+
+
 	this.CreateOverlay = function ( objData )
 
 	{
