@@ -1,13 +1,15 @@
 
+	// Variable{s}
+
+	var WINDOW_INNERWIDTH = ( window.innerWidth );
+	var WINDOW_INNERHEIGHT = ( window.innerHeight );
+
 	/**
 	  * @description detect if string has certain character{s}
 	  * @param {*} string - { string }
 	  * @param {*} string - { subString }
 	  * @returns {Boolean}
 	  */
-
-	var WINDOW_INNERWIDTH = ( window.innerWidth );
-	var WINDOW_INNERHEIGHT = ( window.innerHeight );
 
 	this.inStr = function ( string, subString ) {
 
@@ -213,7 +215,6 @@
 			visible : true, 
 		}, 
 	});
-
 	console.error ( this.resizeOverlay );
 
 
