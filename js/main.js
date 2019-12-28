@@ -206,13 +206,13 @@
 		style : {
 			backgroundColor : '#000', 
 			position : 'absolute', 
-			top : 500, 
-			left : 0, 
-			bottom : 0, 
-			right : 0, 
+			top : '500px', 
+			left : '0px', 
+			bottom : '0px', 
+			right : '0px', 
 			zIndex : 1000, 
 			visible : true, 
 		}, 
 	}, 1 );
 
-console.error ( this.resizeOverlay );
+	console.error ( this.resizeOverlay );
