@@ -215,4 +215,6 @@
 		}, 
 	}, 1 );
 
-console.error ( this.resizeOverlay );
+	console.error ( this.resizeOverlay );
+
+
