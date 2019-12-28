@@ -215,4 +215,4 @@
 		}, 
 	}, 1 );
 
-
+	console.error ( this.resizeOverlay );
